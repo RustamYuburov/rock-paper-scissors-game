@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Reggae+One&family=Ubuntu&display=swap');
+
+:root {
+background-color: #000000;
+color: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+margin: 0;
+padding: 0;
+}
+
+body {
+    font-family: 'Ubuntu', 'sans-serif';
+}
+
+/* header's style */
+
+header {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.head-h1 {
+    font-family: 'Reggae One', Helvetica, sans-serif;
+    margin: 20px auto;
+    font-size: 60px;
+}
+
+.head-p {
+    margin: 10px auto;
+    font-family: ;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* main's style */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    font-size: large;
+}
+
+/* scoreboard and message style */
+
+.scoreboard {
+    margin-bottom: 20px ;
+    display: flex;
+    justify-content: center;
+}
+
+.scoreDiv {
+    text-align: center;
+    padding: 10px;
+    margin: 0 70px 0 70px;
+}
+
+.message {
+    margin: 10px 0px;
+    padding: 20px;
+    text-align: center;
+}
+
+p.score-text {
+    margin: 10px 0px;
+    font-size: 1.5em;
+}
+
+/* elements style  */
+
+.elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+}
+
+.element {
+    text-align: center;
+    margin: 0 70px 0 70px;
+}
+
+.images {
+    text-align: justify;
+    transition: all 0.4s ease;
+}
+
+.images:hover {
+    transform: scale(1.1);
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+/* end text and button style */
+
+.game-end-div {
+    align-self: center;
+    margin: 10px;
+    border: white solid 3px;
+    border-radius: 10px;
+    padding: 130px 230px;
+    position: absolute;
+    background-color: black;
+    display: none;
+    transition: all 1s;
+}
+
+.show-up {
+    display:initial;
+    transform: scale(1.1);
+}
+
+.game-end-text {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.play-again {
+    padding: 20px;
+    margin-top: 5px;
+    border: white solid;
+    border-radius:7px;
+    text-decoration:none;
+    font-size: 20px;
+    color:#FFFFFF;
+    text-align:center;
+    background-color: transparent;
+    transition: all 0.2s;
+}
+
+.play-again:hover {
+    color: #000;
+    background-color: #fff;
+}
