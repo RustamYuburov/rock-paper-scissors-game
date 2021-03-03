@@ -115,7 +115,6 @@ img {
     position: absolute;
     background-color: black;
     display: none;
-    transition: all 1s;
 }
 
 .show-up {
@@ -138,7 +137,7 @@ img {
     color:#FFFFFF;
     text-align:center;
     background-color: transparent;
-    transition: all 0.2s;
+    transition: all 0.5s;
 }
 
 .play-again:hover {
