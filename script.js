@@ -27,17 +27,11 @@ icons.forEach((icon) => {
 
 // Main game logic
 function playGame(playerSelect) {
-
     let playerSelection = playerSelect.toLowerCase();
     let computerSelection = computerPlay();
     let roundResult = playOneRound(playerSelection, computerSelection);
 
-    if (roundResult.search('You Win!') > -1) {
-        playerScore++;
-      } else if (roundResult.search('You Lose!') > -1) {
-        computerScore++;
-      }
-    
+    checkRoundResult(roundResult);
     scoreComputer.textContent = `${computerScore}`;
     scorePlayer.textContent = `${playerScore}`;
     message.textContent = `${roundResult}`;
@@ -90,14 +84,22 @@ function playOneRound(playerSelection, computerSelection) {
             break;
         }
       }
-    }
+};
 
 // Helper functions
 function computerPlay() {
     const elements = ['rock', 'paper', 'scissors'];
     let random = Math.floor(Math.random() * elements.length);
     return elements[random];
-}
+};
+
+function checkRoundResult(result) {
+  if (result.search('You Win!') > -1) {
+    playerScore++;
+  } else if (result.search('You Lose!') > -1) {
+    computerScore++;
+  }
+};
 
 resetButton.addEventListener('click', () => {
     window.location.reload();
