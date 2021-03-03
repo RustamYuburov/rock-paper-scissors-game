@@ -45,7 +45,7 @@ function playGame(playerSelect) {
     }  
 };
 
-// Single round function 
+// Function using If statements and switch to get one round result
 function playOneRound(playerSelection, computerSelection) {
     if (playerSelection === 'rock') {
         switch (computerSelection) {
