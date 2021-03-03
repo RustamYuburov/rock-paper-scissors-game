@@ -2,7 +2,7 @@
 // First get all necessary DOM nodes
 const scorePlayer = document.querySelector("#play-score");
 const scoreComputer = document.querySelector("#comp-score");
-let message = document.querySelector(".message");
+const message = document.querySelector(".message");
 const icons = Array.from(document.querySelectorAll(".images"));
 const endAlert = document.querySelector("#end-alert");
 const endText = document.querySelector(".game-end-text");
